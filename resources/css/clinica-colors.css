@@ -1,0 +1,37 @@
+/* 
+ * Paleta de Colores Profesional para Clínica
+ * Colores médicos profesionales y confiables
+ */
+
+:root {
+    /* Colores principales médicos */
+    --color-primary: #1976D2;        /* Azul médico profesional */
+    --color-primary-dark: #1565C0;    /* Azul médico oscuro */
+    --color-primary-light: #42A5F5;  /* Azul médico claro */
+    
+    /* Colores secundarios */
+    --color-secondary: #26A69A;      /* Teal médico */
+    --color-secondary-light: #4DB6AC; /* Teal claro */
+    
+    /* Colores de acento */
+    --color-accent: #00ACC1;         /* Cyan suave */
+    --color-success: #4CAF50;        /* Verde médico */
+    --color-warning: #FF9800;        /* Naranja suave */
+    --color-danger: #E53935;         /* Rojo médico */
+    
+    /* Colores neutros */
+    --color-white: #FFFFFF;
+    --color-light-gray: #F5F5F5;
+    --color-gray: #E0E0E0;
+    --color-dark-gray: #757575;
+    --color-text: #212121;
+    --color-text-light: #616161;
+    
+    /* Gradientes profesionales */
+    --gradient-primary: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+    --gradient-secondary: linear-gradient(135deg, #26A69A 0%, #00897B 100%);
+    --gradient-soft: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    --gradient-navbar: linear-gradient(to right, #1976D2, #26A69A);
+    --gradient-footer: linear-gradient(to right, #1565C0, #1976D2);
+}
+
