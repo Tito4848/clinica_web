@@ -35,7 +35,7 @@
         .recover-container {
             position: relative;
             z-index: 2;
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             padding: 40px 30px;
@@ -44,7 +44,7 @@
             width: 100%;
             max-width: 500px;
             animation: fadeIn 1s ease-in-out;
-            color: #fff;
+            color: #212121;
         }
 
         @keyframes fadeIn {
@@ -58,13 +58,13 @@
         }
 
         .form-control:focus {
-            box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.3);
-            border-color: transparent;
+            box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25);
+            border-color: #1976D2;
         }
 
         .btn-primary {
-            background-color: #ffffff;
-            color: #1976D2;
+            background-color: #1976D2;
+            color: #ffffff;
             font-weight: 600;
             border: none;
             border-radius: 12px;
@@ -72,8 +72,8 @@
         }
 
         .btn-primary:hover {
-            background-color: #e3f2fd;
-            color: #1976D2;
+            background-color: #1565C0;
+            color: #ffffff;
         }
 
         .btn-outline-secondary {
@@ -88,13 +88,13 @@
             color: #e0f2f1;
         }
 
-        a {
-            color: #ffffff;
+        .recover-container a {
+            color: #1976D2;
             text-decoration: underline;
         }
 
-        a:hover {
-            color: #e3f2fd;
+        .recover-container a:hover {
+            color: #1565C0;
         }
 
         .d-flex-center {
@@ -115,7 +115,7 @@
 <div class="d-flex-center">
     <div class="recover-container text-center">
         <h2 class="mb-1"><i class="bi bi-key-fill me-1"></i> Recuperar Cuenta</h2>
-        <p class="text-light mb-4">Ingresa tu correo para enviarte el enlace de recuperación</p>
+        <p class="text-dark mb-4">Ingresa tu correo para enviarte el enlace de recuperación</p>
 
         <form id="recoverForm" class="text-start">
             <div class="mb-3">

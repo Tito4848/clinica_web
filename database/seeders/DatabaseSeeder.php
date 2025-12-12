@@ -20,9 +20,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-        // Seed de farmacia
+        // Seed de farmacia y doctores
         $this->call([
             FarmaciaSeeder::class,
+            DoctorSeeder::class,
         ]);
     }
 }

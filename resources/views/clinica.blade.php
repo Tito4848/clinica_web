@@ -10,21 +10,24 @@
     }
 
     .clinica-hero {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(12px);
         border-radius: 25px;
         padding: 3rem;
         margin-bottom: 3rem;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        color: #212121;
     }
 
     .feature-card {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 2rem;
         transition: transform 0.3s ease;
         height: 100%;
+        color: #212121;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .feature-card:hover {

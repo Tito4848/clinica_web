@@ -8,12 +8,13 @@
     }
 
     .confirmation-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 3rem;
-        color: white;
+        color: #212121;
         text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .success-icon {
@@ -46,7 +47,7 @@
 
                 <div class="text-start mb-4">
                     <h5 class="mb-3">Productos</h5>
-                    <table class="table text-white">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>Producto</th>

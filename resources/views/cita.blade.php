@@ -28,30 +28,31 @@
         }
 
         .glass-form {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
             border-radius: 20px;
             padding: 2.5rem;
-            color: #fff;
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            color: #212121;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
         }
 
         .glass-form input,
         .glass-form select,
         .glass-form textarea {
             border-radius: 12px;
-            background-color: rgba(255, 255, 255, 0.15);
-            color: #fff;
-            border: none;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #212121;
+            border: 1px solid #E0E0E0;
         }
 
         .glass-form input::placeholder,
         .glass-form textarea::placeholder {
-            color: #f1f1f1a6;
+            color: #757575;
         }
 
         .glass-form label {
             font-weight: 600;
+            color: #212121;
         }
 
         .glass-form select option {
@@ -83,7 +84,7 @@
         }
 
         .text-white-muted {
-            color: #d9f3ffcc;
+            color: #616161;
         }
     </style>
 
@@ -146,7 +147,7 @@
 
                     <div class="mb-3">
                         <label for="especialidad" class="form-label">Especialidad</label>
-                        <select class="form-select form-select-lg text-white" id="especialidad" name="especialidad" required>
+                        <select class="form-select form-select-lg" id="especialidad" name="especialidad" required>
                             <option value="" disabled selected>Selecciona una opción</option>
                             <option value="Consulta General" {{ old('especialidad') == 'Consulta General' ? 'selected' : '' }}>Consulta General</option>
                             <option value="Pediatría" {{ old('especialidad') == 'Pediatría' ? 'selected' : '' }}>Pediatría</option>

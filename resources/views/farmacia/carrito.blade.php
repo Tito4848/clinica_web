@@ -8,18 +8,19 @@
     }
 
     .cart-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 2rem;
-        color: white;
+        color: #212121;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 </style>
 
 <div class="container py-4">
     <div class="row mb-4">
         <div class="col-12">
-            <h1 class="text-white">
+            <h1 class="text-dark">
                 <i class="bi bi-cart me-2"></i>Carrito de Compras
             </h1>
         </div>
@@ -43,7 +44,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="cart-card mb-4">
-                    <table class="table table-hover text-white">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>Producto</th>
@@ -69,7 +70,7 @@
                                             </div>
                                             <div>
                                                 <strong>{{ $item->producto->nombre }}</strong><br>
-                                                <small class="text-white-50">{{ $item->producto->categoria->nombre }}</small>
+                                                <small class="text-muted">{{ $item->producto->categoria->nombre }}</small>
                                             </div>
                                         </div>
                                     </td>
@@ -146,9 +147,9 @@
         </div>
     @else
         <div class="cart-card text-center py-5">
-            <i class="bi bi-cart-x fs-1 text-white-50 mb-3"></i>
-            <h3 class="text-white mb-3">Tu carrito está vacío</h3>
-            <p class="text-white-50 mb-4">Agrega productos para comenzar a comprar</p>
+            <i class="bi bi-cart-x fs-1 text-muted mb-3"></i>
+            <h3 class="text-dark mb-3">Tu carrito está vacío</h3>
+            <p class="text-muted mb-4">Agrega productos para comenzar a comprar</p>
             <a href="{{ route('farmacia.index') }}" class="btn btn-warning btn-lg">
                 <i class="bi bi-shop me-2"></i>Ir a la Farmacia
             </a>

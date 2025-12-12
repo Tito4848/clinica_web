@@ -10,7 +10,7 @@
         min-height: 100vh;
         margin: 0;
         padding: 0;
-        color: #fff;
+        color: #212121;
         position: relative;
         overflow-x: hidden;
     }
@@ -38,14 +38,14 @@
     }
 
     .glass-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10px);
         padding: 40px;
         flex: 1 1 480px;
         min-width: 300px;
-        color: #fff;
+        color: #212121;
         transition: all 0.3s ease-in-out;
     }
 
@@ -57,6 +57,7 @@
     .glass-card h2 {
         font-weight: 700;
         margin-bottom: 15px;
+        color: #212121;
     }
 
     .form-control,
@@ -76,8 +77,8 @@
     }
 
     .btn-custom {
-        background: #fff;
-        color: #0078d7;
+        background: #1976D2;
+        color: #ffffff;
         border: none;
         padding: 12px 25px;
         border-radius: 30px;
@@ -181,7 +182,7 @@
 
         <div class="info-line"><i class="bi bi-geo-alt-fill text-primary icono"></i> Av. Salud 123, Cercado, Arequipa</div>
         <div class="info-line"><i class="bi bi-telephone-fill text-success icono"></i> +51 987 654 321</div>
-        <div class="info-line"><i class="bi bi-envelope-fill text-light icono"></i> contacto@clinicavida.pe</div>
+        <div class="info-line"><i class="bi bi-envelope-fill text-dark icono"></i> contacto@clinicavida.pe</div>
         <div class="info-line"><i class="bi bi-clock-fill text-info icono"></i> Lunes a Sábado: 8:00 a.m. a 6:00 p.m.</div>
 
         <div class="mt-4">

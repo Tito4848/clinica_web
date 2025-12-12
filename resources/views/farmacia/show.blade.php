@@ -8,11 +8,12 @@
     }
 
     .product-detail-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 2rem;
-        color: white;
+        color: #212121;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .product-image-large {
@@ -29,9 +30,9 @@
         <div class="col-12">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('farmacia.index') }}" class="text-white">Farmacia</a></li>
-                    <li class="breadcrumb-item"><a href="{{ route('farmacia.index', ['categoria' => $producto->categoria_id]) }}" class="text-white">{{ $producto->categoria->nombre }}</a></li>
-                    <li class="breadcrumb-item active text-white">{{ $producto->nombre }}</li>
+                    <li class="breadcrumb-item"><a href="{{ route('farmacia.index') }}" class="text-dark">Farmacia</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('farmacia.index', ['categoria' => $producto->categoria_id]) }}" class="text-dark">{{ $producto->categoria->nombre }}</a></li>
+                    <li class="breadcrumb-item active text-dark">{{ $producto->nombre }}</li>
                 </ol>
             </nav>
         </div>
@@ -130,12 +131,12 @@
     @if($productosRelacionados->count() > 0)
         <div class="row mt-5">
             <div class="col-12">
-                <h3 class="text-white mb-4">Productos Relacionados</h3>
+                <h3 class="text-dark mb-4">Productos Relacionados</h3>
                 <div class="row g-4">
                     @foreach($productosRelacionados as $relacionado)
                         <div class="col-md-3">
                             <div class="product-detail-card">
-                                <a href="{{ route('farmacia.show', $relacionado->slug) }}" class="text-decoration-none text-white">
+                                <a href="{{ route('farmacia.show', $relacionado->slug) }}" class="text-decoration-none text-dark">
                                     <div class="mb-3" style="height: 150px; background: rgba(255,255,255,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
                                         @if($relacionado->imagen)
                                             <img src="{{ asset('storage/' . $relacionado->imagen) }}" 

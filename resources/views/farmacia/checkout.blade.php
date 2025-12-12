@@ -8,18 +8,19 @@
     }
 
     .checkout-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 2rem;
-        color: white;
+        color: #212121;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 </style>
 
 <div class="container py-4">
     <div class="row mb-4">
         <div class="col-12">
-            <h1 class="text-white">
+            <h1 class="text-dark">
                 <i class="bi bi-credit-card me-2"></i>Finalizar Compra
             </h1>
         </div>
@@ -72,13 +73,13 @@
                     <div class="mb-3">
                         <label class="form-label">Notas (Opcional)</label>
                         <textarea name="notas" class="form-control" rows="3">{{ old('notas') }}</textarea>
-                        <small class="text-white-50">Instrucciones especiales para la entrega</small>
+                        <small class="text-muted">Instrucciones especiales para la entrega</small>
                     </div>
                 </div>
 
                 <div class="checkout-card">
                     <h4 class="mb-4">Resumen del Pedido</h4>
-                    <table class="table text-white">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>Producto</th>

@@ -10,12 +10,13 @@
     }
 
     .bg-futuristic {
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.9);
         border-radius: 25px;
         backdrop-filter: blur(10px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         padding: 2.5rem;
         transition: all 0.4s ease-in-out;
+        color: #212121;
     }
 
     .bg-futuristic:hover {
@@ -111,33 +112,33 @@
     <div class="container bg-futuristic">
         <div class="text-center mb-5">
             <h2 class="text-primary" data-aos="fade-down">¿Por qué elegir Clínica Vida?</h2>
-            <p class="lead text-light" data-aos="fade-up" data-aos-delay="150">
+            <p class="lead text-dark" data-aos="fade-up" data-aos-delay="150">
                 Combinamos experiencia médica, innovación tecnológica y atención humana.
             </p>
         </div>
 
         <div class="row text-center g-4">
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                <a href="{{ url('/profesionales') }}" target="_blank" class="text-decoration-none text-light">
-                    <div class="p-4 bg-white bg-opacity-10 rounded transition h-100">
+                <a href="{{ url('/profesionales') }}" target="_blank" class="text-decoration-none text-dark">
+                    <div class="p-4 bg-white bg-opacity-50 rounded transition h-100">
                         <i class="bi bi-person-heart fs-1 text-primary mb-3"></i>
-                        <h5>Profesionales Expertos</h5>
-                        <p>Médicos con enfoque humanitario y vocación de servicio.</p>
+                        <h5 class="text-dark">Profesionales Expertos</h5>
+                        <p class="text-dark">Médicos con enfoque humanitario y vocación de servicio.</p>
                     </div>
                 </a>
             </div>
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="p-4 bg-white bg-opacity-10 rounded transition h-100">
+                <div class="p-4 bg-white bg-opacity-50 rounded transition h-100">
                     <i class="bi bi-hospital-fill fs-1 text-info mb-3"></i>
-                    <h5>Servicios Integrales</h5>
-                    <p>Desde diagnósticos hasta tratamientos personalizados.</p>
+                    <h5 class="text-dark">Servicios Integrales</h5>
+                    <p class="text-dark">Desde diagnósticos hasta tratamientos personalizados.</p>
                 </div>
             </div>
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="p-4 bg-white bg-opacity-10 rounded transition h-100">
+                <div class="p-4 bg-white bg-opacity-50 rounded transition h-100">
                     <i class="bi bi-chat-heart fs-1 text-success mb-3"></i>
-                    <h5>Atención Personalizada</h5>
-                    <p>Soluciones adaptadas a las necesidades de cada paciente.</p>
+                    <h5 class="text-dark">Atención Personalizada</h5>
+                    <p class="text-dark">Soluciones adaptadas a las necesidades de cada paciente.</p>
                 </div>
             </div>
         </div>
@@ -147,8 +148,8 @@
 <!-- LLAMADO A LA ACCIÓN -->
 <section class="py-5 text-center">
     <div class="container bg-futuristic" data-aos="fade-up">
-        <h3 class="text-white fw-bold mb-3">Agenda tu cita hoy mismo</h3>
-        <p class="text-light mb-4">Estamos para cuidar de ti y tu familia. Confía tu salud en buenas manos.</p>
+        <h3 class="text-dark fw-bold mb-3">Agenda tu cita hoy mismo</h3>
+        <p class="text-dark mb-4">Estamos para cuidar de ti y tu familia. Confía tu salud en buenas manos.</p>
         <a href="{{ route('solicitar.cita') }}" class="btn btn-cta shadow">
             <i class="bi bi-calendar-check me-2"></i>Solicitar Cita
         </a>

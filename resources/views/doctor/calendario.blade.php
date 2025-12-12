@@ -8,11 +8,11 @@
     }
 
     .calendar-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 2rem;
-        color: white;
+        color: #212121;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     }
 
@@ -32,10 +32,10 @@
         <div class="col-12">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <h1 class="text-white mb-2">
+                    <h1 class="text-dark mb-2">
                         <i class="bi bi-calendar3 me-2"></i>Calendario de Citas
                     </h1>
-                    <p class="text-white-50">Dr. {{ $doctor->user->name }} - {{ $doctor->especialidad }}</p>
+                    <p class="text-muted">Dr. {{ $doctor->user->name }} - {{ $doctor->especialidad }}</p>
                 </div>
                 <a href="{{ route('doctor.dashboard') }}" class="btn btn-warning">
                     <i class="bi bi-arrow-left me-2"></i>Volver al Dashboard

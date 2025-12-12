@@ -9,29 +9,30 @@
     }
 
     .glass-card {
-        background: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(12px);
         border-radius: 20px;
         padding: 1.5rem;
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
+        color: #212121;
     }
 
     .glass-card:hover {
         transform: translateY(-6px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     }
 
     .glass-card h5, .glass-card p {
-        color: #fff;
+        color: #212121;
     }
 
     .section-title {
-        color: #fff;
+        color: #212121;
     }
 
     .section-subtitle {
-        color: #cfefff;
+        color: #616161;
     }
 
     .glass-card img {

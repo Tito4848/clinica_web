@@ -8,11 +8,11 @@
     }
 
     .dashboard-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 1.5rem;
-        color: white;
+        color: #212121;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
     }
@@ -32,18 +32,18 @@
         }
 
     .citas-table {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 15px;
         overflow: hidden;
     }
 
     .citas-table table {
-        color: white;
+        color: #212121;
     }
 
     .citas-table thead {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(25, 118, 210, 0.1);
     }
 
     .badge-estado {
@@ -56,10 +56,10 @@
 <div class="container-fluid py-4">
     <div class="row mb-4">
         <div class="col-12">
-            <h1 class="text-white mb-2">
+            <h1 class="text-dark mb-2">
                 <i class="bi bi-person-badge me-2"></i>Dashboard - Dr. {{ $doctor->user->name }}
             </h1>
-            <p class="text-white-50">Especialidad: {{ $doctor->especialidad }}</p>
+            <p class="text-muted">Especialidad: {{ $doctor->especialidad }}</p>
         </div>
     </div>
 
@@ -69,28 +69,28 @@
             <div class="dashboard-card stat-card">
                 <i class="bi bi-calendar-check fs-1 text-primary mb-2"></i>
                 <div class="stat-number">{{ $estadisticas['total_citas'] }}</div>
-                <div class="text-white-50">Total Citas</div>
+                <div class="text-muted">Total Citas</div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="dashboard-card stat-card">
                 <i class="bi bi-calendar-day fs-1 text-info mb-2"></i>
                 <div class="stat-number">{{ $estadisticas['citas_hoy'] }}</div>
-                <div class="text-white-50">Citas Hoy</div>
+                <div class="text-muted">Citas Hoy</div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="dashboard-card stat-card">
                 <i class="bi bi-clock-history fs-1 text-primary mb-2"></i>
                 <div class="stat-number">{{ $estadisticas['pendientes'] }}</div>
-                <div class="text-white-50">Pendientes</div>
+                <div class="text-muted">Pendientes</div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="dashboard-card stat-card">
                 <i class="bi bi-check-circle fs-1 text-success mb-2"></i>
                 <div class="stat-number">{{ $estadisticas['confirmadas'] }}</div>
-                <div class="text-white-50">Confirmadas</div>
+                <div class="text-muted">Confirmadas</div>
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="dashboard-card">
-                <h4 class="text-white mb-3">
+                <h4 class="text-dark mb-3">
                     <i class="bi bi-lightning-charge me-2"></i>Acciones Rápidas
                 </h4>
                 <div class="d-flex gap-2 flex-wrap">
@@ -119,7 +119,7 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="dashboard-card">
-                <h4 class="text-white mb-3">
+                <h4 class="text-dark mb-3">
                     <i class="bi bi-calendar-day me-2"></i>Citas de Hoy
                 </h4>
                 <div class="citas-table">
@@ -177,7 +177,7 @@
     <div class="row">
         <div class="col-12">
             <div class="dashboard-card">
-                <h4 class="text-white mb-3">
+                <h4 class="text-dark mb-3">
                     <i class="bi bi-list-ul me-2"></i>Todas las Citas
                 </h4>
                 <div class="citas-table">
@@ -237,7 +237,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td colspan="8" class="text-center text-white-50">No hay citas registradas</td>
+                                <td colspan="8" class="text-center text-muted">No hay citas registradas</td>
                             </tr>
                             @endforelse
                         </tbody>

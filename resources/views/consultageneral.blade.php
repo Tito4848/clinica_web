@@ -26,19 +26,20 @@
     }
 
     .glass-box {
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(12px);
         border-radius: 20px;
         padding: 2rem;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        color: #212121;
     }
 
     .glass-box h2, .glass-box h4 {
-        color: #fff;
+        color: #212121;
     }
 
     .glass-box p, .glass-box ul li {
-        color: #e0f7fa;
+        color: #424242;
     }
 
     .list-group-item {
@@ -67,7 +68,7 @@
 <div class="container my-5">
     <div class="text-center mb-5" data-aos="fade-down">
         <h2 class="fw-bold text-primary">Consulta General</h2>
-        <p class="lead px-3 text-light">
+        <p class="lead px-3 text-dark">
             Atención médica integral para tu bienestar. Nuestro equipo está preparado para brindarte el diagnóstico y orientación que necesitas.
         </p>
     </div>

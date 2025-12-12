@@ -8,11 +8,12 @@
     }
 
     .detail-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 2rem;
-        color: white;
+        color: #212121;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 </style>
 
@@ -21,8 +22,8 @@
         <div class="col-12">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('farmacia.mis-pedidos') }}" class="text-white">Mis Pedidos</a></li>
-                    <li class="breadcrumb-item active text-white">Pedido #{{ $pedido->numero_pedido }}</li>
+                    <li class="breadcrumb-item"><a href="{{ route('farmacia.mis-pedidos') }}" class="text-dark">Mis Pedidos</a></li>
+                    <li class="breadcrumb-item active text-dark">Pedido #{{ $pedido->numero_pedido }}</li>
                 </ol>
             </nav>
         </div>
@@ -54,7 +55,7 @@
                 </div>
 
                 <h5 class="mb-3">Productos</h5>
-                <table class="table text-white">
+                    <table class="table">
                     <thead>
                         <tr>
                             <th>Producto</th>

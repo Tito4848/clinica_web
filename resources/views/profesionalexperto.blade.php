@@ -11,21 +11,22 @@
     }
 
     .bg-futuristic {
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(12px);
         border-radius: 20px;
         padding: 3rem 2rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        color: #212121;
     }
 
     .card-futuristic {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(8px);
         border: none;
-        color: #fff;
+        color: #212121;
         border-radius: 16px;
         transition: all 0.3s ease-in-out;
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
     }
 
     .card-futuristic:hover {
@@ -45,7 +46,7 @@
     }
 
     .text-muted {
-        color: #e0e0e0 !important;
+        color: #616161 !important;
     }
 </style>
 
@@ -55,7 +56,7 @@
         <h2 class="text-primary mb-3" data-aos="fade-down">
             <i class="bi bi-person-vcard me-2"></i>Nuestros Profesionales
         </h2>
-        <p class="lead text-light" data-aos="fade-up" data-aos-delay="150">
+        <p class="lead text-dark" data-aos="fade-up" data-aos-delay="150">
             Conoce a nuestros médicos altamente capacitados y comprometidos con tu bienestar.
         </p>
     </div>

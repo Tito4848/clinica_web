@@ -26,17 +26,17 @@
     }
 
     .glass-card {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(15px);
         border-radius: 20px;
         padding: 2rem;
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-        color: white;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+        color: #212121;
     }
 
     .glass-card h4,
     .glass-card p {
-        color: #fff;
+        color: #212121;
     }
 
     .glass-card img {
@@ -44,15 +44,16 @@
     }
 
     .section-title {
-        color: #fff;
+        color: #212121;
     }
 
     .section-subtitle {
-        color: #d9f9ff;
+        color: #616161;
     }
 
     .glass-light {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.7);
+        color: #212121;
     }
 
     .transition {
@@ -86,7 +87,7 @@
                     Tu navegador no soporta la reproducción de video.
                 </video>
             </div>
-            <p class="text-center text-light mt-3">Video institucional: Conoce nuestras instalaciones</p>
+            <p class="text-center text-dark mt-3">Video institucional: Conoce nuestras instalaciones</p>
         </div>
     </div>
 
@@ -128,7 +129,7 @@
                 <div class="col-md-6">
                     <div class="d-flex align-items-start glass-light p-3 rounded transition">
                         <i class="bi {{ $valor['icono'] }} text-primary fs-4 me-3"></i>
-                        <p class="mb-0 fw-semibold text-white">{{ $valor['texto'] }}</p>
+                        <p class="mb-0 fw-semibold text-dark">{{ $valor['texto'] }}</p>
                     </div>
                 </div>
             @endforeach
@@ -138,7 +139,7 @@
     <!-- EQUIPO MÉDICO -->
     <div class="text-center my-5" data-aos="zoom-in">
         <img src="{{ asset('img/equipo.jpg') }}" class="img-fluid rounded shadow" alt="Equipo médico de Clínica Vida" style="max-height: 420px;">
-        <p class="mt-3 text-light">Nuestro equipo médico, comprometido con tu bienestar</p>
+        <p class="mt-3 text-dark">Nuestro equipo médico, comprometido con tu bienestar</p>
     </div>
 
     <!-- BOTÓN DE ACCIÓN -->

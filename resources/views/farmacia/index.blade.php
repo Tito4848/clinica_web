@@ -8,15 +8,16 @@
     }
 
     .product-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 1.5rem;
-        color: white;
+        color: #212121;
         transition: transform 0.3s ease;
         height: 100%;
         display: flex;
         flex-direction: column;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .product-card:hover {
@@ -29,11 +30,11 @@
         height: 200px;
         object-fit: cover;
         border-radius: 15px;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(227, 242, 253, 0.5);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: #1976D2;
         font-size: 3rem;
     }
 
@@ -50,21 +51,22 @@
     }
 
     .filter-sidebar {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 1.5rem;
-        color: white;
+        color: #212121;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 </style>
 
 <div class="container py-4">
     <div class="row mb-4">
         <div class="col-12 text-center">
-            <h1 class="text-white mb-2">
+            <h1 class="text-dark mb-2">
                 <i class="bi bi-capsule-pill me-2"></i>Farmacia Clínica Vida
             </h1>
-            <p class="text-white-50">Productos farmacéuticos de calidad al mejor precio</p>
+            <p class="text-muted">Productos farmacéuticos de calidad al mejor precio</p>
         </div>
     </div>
 
@@ -156,10 +158,10 @@
                                 </div>
 
                                 <h5 class="mb-2">{{ $producto->nombre }}</h5>
-                                <p class="text-white-50 small mb-2">{{ $producto->categoria->nombre }}</p>
+                                <p class="text-muted small mb-2">{{ $producto->categoria->nombre }}</p>
                                 
                                 @if($producto->laboratorio)
-                                    <p class="text-white-50 small mb-2">
+                                    <p class="text-muted small mb-2">
                                         <i class="bi bi-building me-1"></i>{{ $producto->laboratorio }}
                                     </p>
                                 @endif
@@ -198,9 +200,9 @@
                 </div>
             @else
                 <div class="text-center py-5">
-                    <i class="bi bi-inbox fs-1 text-white-50 mb-3"></i>
-                    <h4 class="text-white">No se encontraron productos</h4>
-                    <p class="text-white-50">Intenta con otros filtros de búsqueda</p>
+                    <i class="bi bi-inbox fs-1 text-muted mb-3"></i>
+                    <h4 class="text-dark">No se encontraron productos</h4>
+                    <p class="text-muted">Intenta con otros filtros de búsqueda</p>
                 </div>
             @endif
         </div>

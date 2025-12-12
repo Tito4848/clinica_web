@@ -35,7 +35,7 @@
         .register-container {
             position: relative;
             z-index: 2;
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             padding: 40px 30px;
@@ -44,7 +44,7 @@
             width: 100%;
             max-width: 550px;
             animation: slideIn 1s ease;
-            color: #fff;
+            color: #212121;
         }
 
         @keyframes slideIn {
@@ -61,8 +61,8 @@
         }
 
         .form-control:focus {
-            box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.3);
-            border-color: transparent;
+            box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25);
+            border-color: #1976D2;
         }
 
         .btn-primary {
@@ -91,13 +91,13 @@
             color: #e0f2f1;
         }
 
-        a {
-            color: #ffffff;
+        .register-container a {
+            color: #1976D2;
             text-decoration: underline;
         }
 
-        a:hover {
-            color: #e3f2fd;
+        .register-container a:hover {
+            color: #1565C0;
         }
 
         .centered-wrapper {
@@ -118,7 +118,7 @@
 <div class="centered-wrapper">
     <div class="register-container text-center">
         <h2 class="mb-1"><i class="bi bi-person-plus-fill me-1"></i> Registro</h2>
-        <p class="text-light mb-4">Crea tu cuenta en Clínica Vida</p>
+        <p class="text-dark mb-4">Crea tu cuenta en Clínica Vida</p>
 
         @if ($errors->any())
             <div class="alert alert-danger mb-3">
